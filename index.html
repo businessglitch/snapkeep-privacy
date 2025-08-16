@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapKeep - Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for SnapKeep Chrome Extension - Your privacy is our priority">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      background: white;
+      border-radius: 16px 16px 0 0;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .last-updated {
+      display: inline-block;
+      background: #f0f0f0;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .content {
+      background: white;
+      padding: 40px;
+      border-radius: 0 0 16px 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .quick-summary {
+      background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+      border-left: 4px solid #667eea;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .quick-summary h3 {
+      color: #667eea;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .quick-summary p {
+      margin: 0;
+      font-weight: 500;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 24px;
+      margin: 30px 0 15px 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    h3 {
+      color: #667eea;
+      font-size: 18px;
+      margin: 20px 0 10px 0;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    ul {
+      margin: 15px 0;
+      padding-left: 30px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .highlight-box {
+      background: #f8f9fa;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .permissions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .permission-card {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 20px;
+      border-left: 4px solid #667eea;
+    }
+
+    .permission-card h4 {
+      color: #667eea;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .contact-section {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .contact-section h3 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .contact-link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .back-to-extension {
+      display: inline-block;
+      background: white;
+      color: #667eea;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .back-to-extension:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .privacy-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+
+    .privacy-icon {
+      text-align: center;
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .privacy-icon .icon {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .privacy-icon h4 {
+      color: #667eea;
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .privacy-icon p {
+      font-size: 12px;
+      color: #666;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+
+      .header, .content {
+        padding: 25px;
+      }
+
+      .header h1 {
+        font-size: 24px;
+      }
+
+      .logo {
+        font-size: 48px;
+      }
+
+      .contact-links {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">📸</div>
+      <h1>SnapKeep Privacy Policy</h1>
+      <p>Your privacy is our priority</p>
+      <div class="last-updated">Last Updated: January 2025</div>
+    </div>
+
+    <div class="content">
+      <div class="quick-summary">
+        <h3>📋 Quick Summary</h3>
+        <p>SnapKeep respects your privacy by keeping all data local to your device and never transmitting personal information to external servers. We don't collect, track, or share any of your data.</p>
+      </div>
+
+      <div class="privacy-icons">
+        <div class="privacy-icon">
+          <div class="icon">🔒</div>
+          <h4>100% Local</h4>
+          <p>All data stays on your device</p>
+        </div>
+        <div class="privacy-icon">
+          <div class="icon">🚫</div>
+          <h4>No Tracking</h4>
+          <p>Zero analytics or monitoring</p>
+        </div>
+        <div class="privacy-icon">
+          <div class="icon">🌐</div>
+          <h4>No Network</h4>
+          <p>No external API calls</p>
+        </div>
+        <div class="privacy-icon">
+          <div class="icon">👤</div>
+          <h4>Your Control</h4>
+          <p>Delete data anytime</p>
+        </div>
+      </div>
+
+      <h2>📊 Information We Collect</h2>
+
+      <h3>Data Stored Locally</h3>
+      <p>SnapKeep stores the following information <strong>locally on your device only</strong>:</p>
+      <ul>
+        <li>Screenshots you capture</li>
+        <li>Website URLs and page titles where screenshots were taken</li>
+        <li>Timestamps of when screenshots were captured</li>
+        <li>Your personal settings and preferences</li>
+      </ul>
+
+      <h3>Data We Do NOT Collect</h3>
+      <div class="highlight-box">
+        <ul>
+          <li>❌ Personal information of any kind</li>
+          <li>❌ Browsing history or activity</li>
+          <li>❌ Screenshots are not uploaded anywhere</li>
+          <li>❌ Usage analytics or tracking data</li>
+          <li>❌ Third-party integrations or sharing</li>
+        </ul>
+      </div>
+
+      <h2>🎯 How We Use Your Information</h2>
+      <p>Your data is used solely for:</p>
+      <ul>
+        <li>Storing your screenshots locally in your browser</li>
+        <li>Organizing and displaying your captured screenshots</li>
+        <li>Maintaining your extension settings and preferences</li>
+      </ul>
+
+      <h2>🔐 Data Storage and Security</h2>
+      <ul>
+        <li><strong>Local Storage Only:</strong> All data is stored locally using Chrome's secure storage APIs</li>
+        <li><strong>No Cloud Storage:</strong> We do not upload or store any data on external servers</li>
+        <li><strong>User Control:</strong> You can delete all stored data at any time</li>
+        <li><strong>Browser Security:</strong> Data is protected by your browser's built-in security features</li>
+      </ul>
+
+      <h2>🔑 Permissions Explained</h2>
+      <p>SnapKeep requests minimal permissions for functionality:</p>
+
+      <div class="permissions-grid">
+        <div class="permission-card">
+          <h4>activeTab</h4>
+          <p>Required to capture screenshots of the currently active tab only when you explicitly request it. This is more privacy-friendly than requesting access to all tabs.</p>
+        </div>
+        <div class="permission-card">
+          <h4>contextMenus</h4>
+          <p>Adds right-click menu options for easy access to screenshot features without needing additional UI elements.</p>
+        </div>
+        <div class="permission-card">
+          <h4>storage</h4>
+          <p>Saves your screenshots and settings locally on your device only. No data is ever transmitted to external servers.</p>
+        </div>
+        <div class="permission-card">
+          <h4>offscreen</h4>
+          <p>Processes images for area selection cropping in a secure, isolated environment without accessing page content.</p>
+        </div>
+      </div>
+
+      <h2>👤 Your Rights and Control</h2>
+      <p>You have complete control over your data:</p>
+      <ul>
+        <li><strong>Access:</strong> View all your screenshots through the extension popup</li>
+        <li><strong>Export:</strong> Download all your data as a JSON file</li>
+        <li><strong>Delete:</strong> Remove individual screenshots or clear all data</li>
+        <li><strong>Settings:</strong> Modify extension behavior through the settings page</li>
+      </ul>
+
+      <h2>🔄 Data Retention</h2>
+      <ul>
+        <li>Screenshots are retained until you manually delete them</li>
+        <li>You can set automatic deletion preferences in the settings</li>
+        <li>Uninstalling the extension removes all stored data</li>
+      </ul>
+
+      <h2>🌍 Third-Party Services</h2>
+      <p>SnapKeep <strong>does not integrate with any third-party services or APIs</strong>. The extension operates entirely offline and locally on your device.</p>
+
+      <h2>📋 Compliance</h2>
+      <p>This extension complies with:</p>
+      <ul>
+        <li>Chrome Web Store Developer Policies</li>
+        <li>General Data Protection Regulation (GDPR)</li>
+        <li>California Consumer Privacy Act (CCPA)</li>
+        <li>Privacy by Design principles</li>
+      </ul>
+
+      <h2>🔄 Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any changes will be reflected in the "Last Updated" date above. Continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+
+      <div class="contact-section">
+        <h3>📞 Contact & Support</h3>
+        <p>Questions about privacy or need support?</p>
+        <div class="contact-links">
+          <a href="https://www.linkedin.com/in/fahdhayat/" class="contact-link" target="_blank" rel="noopener">
+            <span>💼</span>
+            LinkedIn Support
+          </a>
+          <a href="https://coff.ee/fahadhayat" class="contact-link" target="_blank" rel="noopener">
+            <span>☕</span>
+            Buy me a coffee
+          </a>
+        </div>
+        <div style="margin-top: 20px; font-size: 14px;">
+          <p style="margin: 5px 0; color: white; font-weight: 600;">
+            <strong>Developer:</strong> Fahad Hayat
+          </p>
+          <p style="margin: 5px 0; color: white; font-weight: 500;">
+            <strong>Response Time:</strong> Usually within 24-48 hours
+          </p>
+        </div>
+      </div>
+
+      <div class="highlight-box" style="text-align: center; margin-top: 30px;">
+        <h3>🎯 Bottom Line</h3>
+        <p><strong>SnapKeep is designed with privacy as the foundation.</strong> Your screenshots never leave your device, we don't track you, and you maintain complete control over your data. Simple as that.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="chrome-extension://your-extension-id/popup.html" class="back-to-extension">
+        📸 Back to SnapKeep
+      </a>
+      <p style="margin-top: 20px;">
+        Made with ❤️ by <a href="https://www.linkedin.com/in/fahdhayat/" style="color: white;">Fahad Hayat</a><br>
+        SnapKeep v1.0.0 - Your screenshots, your control.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Add animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for animation
+    document.querySelectorAll('.permission-card, .privacy-icon, .highlight-box').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
