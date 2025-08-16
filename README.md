@@ -62,6 +62,7 @@
 - `activeTab` - Capture screenshots of current tab
 - `contextMenus` - Add right-click menu options
 - `storage` - Save screenshots locally
+- `scripting` - Create area selection overlay interface
 - `offscreen` - Process images for area selection
 
 ### Privacy & Security
